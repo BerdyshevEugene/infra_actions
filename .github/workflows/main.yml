@@ -78,5 +78,5 @@ jobs:
             # Выполняет pull образа с DockerHub
             sudo docker pull eugenenez/infra_actions
             # остановка всех контейнеров
-            sudo docker stop $(sudo docker ps -a -q)
+            sudo docker stop $(sudo docker ps -a -q) 
             sudo docker run --rm -d -p 4999:4999 eugenenez/infra_actions
