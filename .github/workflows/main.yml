@@ -79,4 +79,4 @@ jobs:
             sudo docker pull eugenenez/infra_actions
             # остановка всех контейнеров
             sudo docker stop $(sudo docker ps -a -q) 
-            sudo docker run --rm -d -p 4999:4999 eugenenez/infra_actions
+            sudo docker run --rm -d -p 0:4999 eugenenez/infra_actions
